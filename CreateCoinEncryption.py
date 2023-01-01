@@ -1,18 +1,20 @@
+
 from itertools import product
 
 
-def create_portfolio(list_item, filename, encrypt_suffx, filename_peffix, start: int, end: int):
-    output = open(filename, 'w', encoding='utf-8')
-    output.write('collection_name\tencrypt_name\n')
+def create_portfolio(list_item, filename, encrypt_prefix, filename_prefix, start: int, end: int):
+    output = open(filename, 'w', encoding='UTF-8')
+    output.write('collection_name,encrypt_name\n')
     for i in list_item[start:end]:
-        output.write(filename_peffix)
+        output.write(filename_prefix)
         for j in i:
             output.write(j)
-        output.write('\t')
+        output.write(',')
+        output.write(encrypt_prefix)
         for j in i:
             output.write(j)
             # output.write(" ")
-        output.write(encrypt_suffx)
+
         output.write('\n')
     output.close()
 
@@ -28,12 +30,13 @@ HSEB = ['甲子', '乙丑', '丙寅', '丁卯', '戊辰', '己巳', '庚午', '�
 
 v = list(product(HSEB, repeat=3))
 print(len(v))
+
 # 0-1000 (不含1000) 生成结果前1000个
-create_portfolio(list_item=v, filename="河图币-1227-[0-1000].xlsx", encrypt_suffx="火", filename_peffix="河图币-", start=0, end=1000)
-create_portfolio(list_item=v, filename="洛书币-1227-[0-1000].xlsx", encrypt_suffx="木", filename_peffix="洛书币-", start=0, end=1000)
-create_portfolio(list_item=v, filename="先八卦币-1227-[0-1000].xlsx", encrypt_suffx="金", filename_peffix="先八卦币-", start=0, end=1000)
-create_portfolio(list_item=v, filename="后八卦币-1227-[0-1000].xlsx", encrypt_suffx="水", filename_peffix="后八卦币-", start=0, end=1000)
-create_portfolio(list_item=v, filename="太极币-1227-[0-1000].xlsx", encrypt_suffx="土", filename_peffix="太极币-", start=0, end=1000)
+create_portfolio(list_item=v, filename="河图币-0101-[100-200].csv", encrypt_prefix="木", filename_prefix="河图币-木-", start=100, end=200)
+create_portfolio(list_item=v, filename="洛书币-0101-[100-200].csv", encrypt_prefix="木", filename_prefix="洛书币-木-", start=100, end=200)
+create_portfolio(list_item=v, filename="伏羲币-0101-[100-200].csv", encrypt_prefix="木", filename_prefix="伏羲币-木-", start=100, end=200)
+create_portfolio(list_item=v, filename="文王币-0101-[100-200].csv", encrypt_prefix="木", filename_prefix="文王币-木-", start=100, end=200)
+create_portfolio(list_item=v, filename="太极币-0101-[100-200].csv", encrypt_prefix="木", filename_prefix="太极币-木-", start=100, end=200)
 
 
 # output = open('data2.xlsx', 'w', encoding='utf-8')
