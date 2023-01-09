@@ -3,7 +3,7 @@ from itertools import product
 
 
 def create_portfolio(list_item, filename, encrypt_prefix, filename_prefix, start: int, end: int):
-    output = open(filename, 'w', encoding='UTF-8')
+    output = open(filename, 'w')
     output.write('collection_name,encrypt_name\n')
     for i in list_item[start:end]:
         output.write(filename_prefix)
@@ -32,11 +32,21 @@ v = list(product(HSEB, repeat=3))
 print(len(v))
 
 # 0-1000 (不含1000) 生成结果前1000个
-create_portfolio(list_item=v, filename="河图币-0101-[100-200].csv", encrypt_prefix="木", filename_prefix="河图币-木-", start=100, end=200)
-create_portfolio(list_item=v, filename="洛书币-0101-[100-200].csv", encrypt_prefix="木", filename_prefix="洛书币-木-", start=100, end=200)
-create_portfolio(list_item=v, filename="伏羲币-0101-[100-200].csv", encrypt_prefix="木", filename_prefix="伏羲币-木-", start=100, end=200)
-create_portfolio(list_item=v, filename="文王币-0101-[100-200].csv", encrypt_prefix="木", filename_prefix="文王币-木-", start=100, end=200)
-create_portfolio(list_item=v, filename="太极币-0101-[100-200].csv", encrypt_prefix="木", filename_prefix="太极币-木-", start=100, end=200)
+
+# 铸造日志
+#  2023 01 01  包含以前 铸造 单币 500 套 0-100，100-500
+#  2023 01 05 - 铸造 20个 套币 500-520
+#  2023 01 09 铸造 单币 500套 520 - 1020
+
+
+# 河洛文化币（套）
+# create_portfolio(list_item=v, filename="河洛文化币（套）-0105-[500-520].csv", encrypt_prefix="", filename_prefix="河洛文化币（套）金-", start=500, end=520)
+
+create_portfolio(list_item=v, filename="河图币-0109-[520-1020].csv", encrypt_prefix="金", filename_prefix="河图币-金-", start=520, end=1020)
+create_portfolio(list_item=v, filename="洛书币-0109-[520-1020].csv", encrypt_prefix="金", filename_prefix="洛书币-金-", start=520, end=1020)
+create_portfolio(list_item=v, filename="伏羲币-0109-[520-1020].csv", encrypt_prefix="金", filename_prefix="伏羲币-金-", start=520, end=1020)
+create_portfolio(list_item=v, filename="文王币-0109-[520-1020].csv", encrypt_prefix="金", filename_prefix="文王币-金-", start=520, end=1020)
+create_portfolio(list_item=v, filename="太极币-0109-[520-1020].csv", encrypt_prefix="金", filename_prefix="太极币-金-", start=520, end=1020)
 
 
 # output = open('data2.xlsx', 'w', encoding='utf-8')
