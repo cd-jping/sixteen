@@ -36,17 +36,18 @@ print(len(v))
 # 铸造日志
 # 2023 01 01 (包含以前) 铸造 单币 500 套 0 - 100; 100 - 500
 # 2023 01 05 铸造 20 个 套币 500 - 520
-# 2023 01 09 铸造 单币 500 套 520 - 1020
+# 2023 01 09 铸造 500 套 单币 520 - 1020
 # 2023 02 02 铸造 100 个 套币 1020 - 1120
+# 2023 02 03 铸造 100 套 单币 1120 - 1220
 
 # 河洛文化币（套）
-create_portfolio(list_item=v, filename="河洛文化币（套）-0202-[1020-1120].csv", encrypt_prefix="", filename_prefix="河洛文化币（套）金-", start=1020, end=1120)
+# create_portfolio(list_item=v, filename="河洛文化币（套）-0202-[1020-1120].csv", encrypt_prefix="", filename_prefix="河洛文化币（套）金-", start=1020, end=1120)
 
-# create_portfolio(list_item=v, filename="河图币-0109-[520-1020].csv", encrypt_prefix="金", filename_prefix="河图币-金-", start=520, end=1020)
-# create_portfolio(list_item=v, filename="洛书币-0109-[520-1020].csv", encrypt_prefix="金", filename_prefix="洛书币-金-", start=520, end=1020)
-# create_portfolio(list_item=v, filename="伏羲币-0109-[520-1020].csv", encrypt_prefix="金", filename_prefix="伏羲币-金-", start=520, end=1020)
-# create_portfolio(list_item=v, filename="文王币-0109-[520-1020].csv", encrypt_prefix="金", filename_prefix="文王币-金-", start=520, end=1020)
-# create_portfolio(list_item=v, filename="太极币-0109-[520-1020].csv", encrypt_prefix="金", filename_prefix="太极币-金-", start=520, end=1020)
+create_portfolio(list_item=v, filename="河图币-0203-[1120-1220].csv", encrypt_prefix="金", filename_prefix="河图币-金-", start=1120, end=1220)
+create_portfolio(list_item=v, filename="洛书币-0203-[1120-1220].csv", encrypt_prefix="金", filename_prefix="洛书币-金-", start=1120, end=1220)
+create_portfolio(list_item=v, filename="伏羲币-0203-[1120-1220].csv", encrypt_prefix="金", filename_prefix="伏羲币-金-", start=1120, end=1220)
+create_portfolio(list_item=v, filename="文王币-0203-[1120-1220].csv", encrypt_prefix="金", filename_prefix="文王币-金-", start=1120, end=1220)
+create_portfolio(list_item=v, filename="太极币-0203-[1120-1220].csv", encrypt_prefix="金", filename_prefix="太极币-金-", start=1120, end=1220)
 
 
 # output = open('data2.xlsx', 'w', encoding='utf-8')
