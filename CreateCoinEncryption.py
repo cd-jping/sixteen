@@ -44,9 +44,9 @@ print(v[0+4999])
 # 2023 02 02 铸造 100 个 套币 1020 - 1120
 # 2023 02 03 铸造 100 套 单币 1120 - 1220
 
-# 四象呈瑞系列
+# 四象呈瑞系列 5000 - ????
 
-
+# 2023 02 08 铸造 100 套 单币 5000 - 5100
 
 
 
@@ -54,11 +54,11 @@ print(v[0+4999])
 # create_portfolio(list_item=v, filename="河洛文化币（套）-0202-[1020-1120].csv", encrypt_prefix="", filename_prefix="河洛文化币（套）金-", start=1020, end=1120)
 
 # # 河洛文化币（单币）
-create_portfolio(list_item=v, filename="河图币-0203-[1120-1220].csv", encrypt_prefix="金", filename_prefix="河图币-金-", start=1120, end=1220)
-create_portfolio(list_item=v, filename="洛书币-0203-[1120-1220].csv", encrypt_prefix="金", filename_prefix="洛书币-金-", start=1120, end=1220)
-create_portfolio(list_item=v, filename="伏羲币-0203-[1120-1220].csv", encrypt_prefix="金", filename_prefix="伏羲币-金-", start=1120, end=1220)
-create_portfolio(list_item=v, filename="文王币-0203-[1120-1220].csv", encrypt_prefix="金", filename_prefix="文王币-金-", start=1120, end=1220)
-create_portfolio(list_item=v, filename="太极币-0203-[1120-1220].csv", encrypt_prefix="金", filename_prefix="太极币-金-", start=1120, end=1220)
+create_portfolio(list_item=v, filename="河图币-0208-[5000-5100].csv", encrypt_prefix="金", filename_prefix="河图币-金-", start=5000, end=5100)
+create_portfolio(list_item=v, filename="洛书币-0208-[5000-5100].csv", encrypt_prefix="金", filename_prefix="洛书币-金-", start=5000, end=5100)
+create_portfolio(list_item=v, filename="伏羲币-0208-[5000-5100].csv", encrypt_prefix="金", filename_prefix="伏羲币-金-", start=5000, end=5100)
+create_portfolio(list_item=v, filename="文王币-0208-[5000-5100].csv", encrypt_prefix="金", filename_prefix="文王币-金-", start=5000, end=5100)
+create_portfolio(list_item=v, filename="太极币-0208-[5000-5100].csv", encrypt_prefix="金", filename_prefix="太极币-金-", start=5000, end=5100)
 #
 # create_portfolio(list_item=v, filename="太极币-TEST-[4999-5000].csv", encrypt_prefix="金", filename_prefix="太极币-金-", start=4999, end=5000)
 
